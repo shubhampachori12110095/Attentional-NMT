@@ -24,8 +24,10 @@ Our model training loss is shown in the following picture: ![](images/loss.png)
 
 To learn the effect of different beam sizes when doing inference (translation), we set the beam size from 1 to 15. The De→En translation performance are shown below. ![](images/table.png)
 
+From the table 2 we can see that our translation model can produce very good translation on short sentences. And the translation quality decrease when the sentences becoming longer. But our model can still capture the “main structure” of the sentence, with some errors when choosing the target words.![](images/result.png)
 
 ## How to run the code
+
 #### 1. train the model:
 ```
 python train.py --data data-bin/iwslt14.tokenized.de-en/ --optimizer Adam --learning_rate 1e-3 --model_file checkpoints/iwlst14/ --gpuid 0
