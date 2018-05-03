@@ -18,9 +18,11 @@ We firstly tried greedy algorithm, then came to Beam Search Algorithm. The basic
 
 
 ## Result
-Our model training loss is shown in the following picture: ![loss.png]
+Our model training loss is shown in the following picture: ![](images/loss.png)
 
-To learn the effect of different beam sizes when doing inference (translation), we set the beam size from 1 to 15. The De→En translation performance are shown below. ![table.png]
+
+
+To learn the effect of different beam sizes when doing inference (translation), we set the beam size from 1 to 15. The De→En translation performance are shown below. ![](images/table.png)
 
 
 ## How to run the code
